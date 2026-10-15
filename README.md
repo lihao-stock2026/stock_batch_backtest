@@ -19,3 +19,16 @@
 6. 完善代码保护：输入日期校验、空数据判断、夏普比率除零异常防护
 
 ## 📁 项目文件结构
+> ✅ 仓库内托管文件（GitHub可见）
+- `stock_batch_backtest.py`：主程序，包含数据拉取、网格搜索、策略回测、绘图逻辑
+- `.gitignore`：Git忽略规则，不提交缓存数据、图片、虚拟环境
+
+> 📂 本地运行代码后自动生成（不会上传到GitHub）
+- `stock_data.csv`：Tushare原始行情缓存文件
+- `grid_search_result.csv`：网格寻优，保存每组均线策略评价指标
+- `result_plot.png`：回测可视化图表
+
+
+## 🛠️ 环境安装
+```bash
+pip install pandas numpy tushare matplotlib
